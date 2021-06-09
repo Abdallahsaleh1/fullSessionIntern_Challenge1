@@ -3,9 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { ListNavigatorComponent } from './list-navigator/list-navigator.component';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ListNavigatorComponent
   ],
   imports: [
     BrowserModule
