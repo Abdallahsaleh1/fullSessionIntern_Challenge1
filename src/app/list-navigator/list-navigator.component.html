@@ -9,32 +9,9 @@
     <a *ngIf="count != 5" (click)="showListArrows(1)">&raquo;</a>
   </div>
 
-<ul *ngIf="showpage1 == true" >
-    <li *ngFor = "let person of page1">
-        <span>First name: {{person.firstname}} || Last name:{{person.lastName}} || Age:{{person.age}} || Email: {{person.email}}</span> 
+<ul >
+    <li *ngFor = "let person of pages">
+        <span *ngIf = "count == person.page">First name: {{person.firstname}} || Last name:{{person.lastName}} || Age:{{person.age}} || Email: {{person.email}}</span> 
     </li>
 </ul>
 
-<ul *ngIf="showpage2 == true">
-    <li *ngFor = "let person of page2">
-        <span>First name: {{person.firstname}} || Last name:{{person.lastName}} || Age:{{person.age}} || Email: {{person.email}}</span> 
-    </li>
-</ul>
-
-<ul *ngIf="showpage3 == true"  >
-    <li *ngFor = "let person of page3">
-        <span>First name: {{person.firstname}} || Last name:{{person.lastName}} || Age:{{person.age}} || Email: {{person.email}}</span> 
-    </li>
-</ul>
-
-<ul *ngIf="showpage4 == true"  >
-    <li *ngFor = "let person of page4">
-        <span>First name: {{person.firstname}} || Last name:{{person.lastName}} || Age:{{person.age}} || Email: {{person.email}}</span> 
-    </li>
-</ul>
-
-<ul *ngIf="showpage5 == true"  >
-    <li *ngFor = "let person of page5">
-        <span>First name: {{person.firstname}} || Last name:{{person.lastName}} || Age:{{person.age}} || Email: {{person.email}}</span> 
-    </li>
-</ul>
